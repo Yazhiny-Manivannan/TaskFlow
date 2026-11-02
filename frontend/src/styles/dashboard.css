@@ -1,0 +1,59 @@
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* ---------- Stats cards ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.stat-value {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--color-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.stat-card.stat-overdue .stat-value {
+  color: var(--color-error);
+}
+
+/* Tablets: 3 cards per row. Phones: 2 per row. */
+@media (max-width: 800px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

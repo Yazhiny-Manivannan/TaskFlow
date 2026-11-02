@@ -1,0 +1,59 @@
+.btn-small {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.btn-danger {
+  background: var(--color-error);
+  border-color: var(--color-error);
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background: #8f1d14;
+}
+
+.btn-danger-outline {
+  background: var(--color-bg);
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.btn-danger-outline:hover {
+  background: var(--color-error-bg);
+}
+
+/* ---------- Confirmation dialog ---------- */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(10, 37, 64, 0.5);
+  z-index: 100;
+}
+
+.dialog {
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+
+.dialog h2 {
+  margin-bottom: 0.5rem;
+}
+
+.dialog p {
+  margin: 0 0 1.25rem;
+  word-break: break-word;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

@@ -1,0 +1,30 @@
+
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Java / Maven
+target/
+
+# JMeter results
+tests/jmeter/results/
+*.jtl
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
